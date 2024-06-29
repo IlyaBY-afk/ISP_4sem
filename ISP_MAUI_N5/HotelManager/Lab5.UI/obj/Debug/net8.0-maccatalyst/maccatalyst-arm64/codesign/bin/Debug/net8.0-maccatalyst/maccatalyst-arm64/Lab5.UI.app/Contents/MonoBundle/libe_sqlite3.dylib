@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign - /Users/ilya/Downloads/HotelManager/Lab5.UI/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/Lab5.UI.app/Contents/MonoBundle/libe_sqlite3.dylib

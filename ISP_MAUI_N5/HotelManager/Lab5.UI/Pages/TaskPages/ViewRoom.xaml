@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:convertors="clr-namespace:Lab5.UI.ValueConverters"
+             xmlns:viewModels="using:Lab5.UI.ViewModels"
+             x:DataType="viewModels:ViewRoomViewModel"
+             x:Class="Lab5.UI.Pages.TaskPages.ViewRoom">
+
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior EventName="Appearing" Command="{Binding GetRoomByIdCommand}" />
+    </ContentPage.Behaviors>
+
+    <ContentPage.Resources>
+        <convertors:DateToStringConvert x:Key="Date" />
+    </ContentPage.Resources>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Edit room" Command="{Binding EditRoomCommand}" />
+        <ToolbarItem Text="Delete room" Command="{Binding DeleteRoomCommand}" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <VerticalStackLayout>
+            <Frame Padding="10" Margin="20">
+                <HorizontalStackLayout>
+                    <Image
+                        Source="{Binding ImageSrc}"
+                        HeightRequest="100"
+                        Margin="0, 0, 20, 0" />
+                    <VerticalStackLayout>
+                        <Label Text="{Binding Name}" />
+                        <Label Text="{Binding ServiceCost, StringFormat='ServiceCost: {0}'}" />
+                        <Label Text="{Binding CheckInDate, Converter={StaticResource Date}, StringFormat='Start:  {0}'}" />
+                        <Label Text="{Binding CheckOutDate, Converter={StaticResource Date}, StringFormat='End: {0}'}" />
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="using:Lab5.UI.ViewModels"
+             x:DataType="viewModels:AddOrEditCategoryViewModel"
+             x:Class="Lab5.UI.Pages.TaskPages.AddOrEditCategory">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Save" Command="{Binding AddOrEditCategoryCommand}" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <VerticalStackLayout>
+            <Frame Margin="10" Padding="5">
+                <VerticalStackLayout>
+                    <Label Text="Name" />
+                    <Entry Placeholder="Name" Text="{Binding Path='Name'}" />
+                    <Label Text="Description" />
+                    <Entry Placeholder="Description" Text="{Binding Path='Description'}" />
+                </VerticalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,71 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Lab5.UI
+build_property.ProjectDir = /Users/ilya/Downloads/HotelManager/Lab5.UI/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[/Users/ilya/Downloads/HotelManager/Lab5.UI/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Lab5.UI.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[/Users/ilya/Downloads/HotelManager/Lab5.UI/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Lab5.UI.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[/Users/ilya/Downloads/HotelManager/Lab5.UI/Pages/MainPage/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Lab5.UI.Pages.MainPage.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/MainPage/MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/MainPage/MainPage.xaml
+
+[/Users/ilya/Downloads/HotelManager/Lab5.UI/Pages/TaskPages/AddOrEditCategory.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Lab5.UI.Pages.TaskPages.AddOrEditCategory.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/TaskPages/AddOrEditCategory.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/TaskPages/AddOrEditCategory.xaml
+
+[/Users/ilya/Downloads/HotelManager/Lab5.UI/Pages/TaskPages/AddOrEditRoom.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Lab5.UI.Pages.TaskPages.AddOrEditRoom.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/TaskPages/AddOrEditRoom.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/TaskPages/AddOrEditRoom.xaml
+
+[/Users/ilya/Downloads/HotelManager/Lab5.UI/Pages/TaskPages/ViewCategory.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Lab5.UI.Pages.TaskPages.ViewCategory.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/TaskPages/ViewCategory.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/TaskPages/ViewCategory.xaml
+
+[/Users/ilya/Downloads/HotelManager/Lab5.UI/Pages/TaskPages/ViewRoom.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Lab5.UI.Pages.TaskPages.ViewRoom.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/TaskPages/ViewRoom.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/TaskPages/ViewRoom.xaml
+
+[/Users/ilya/Downloads/HotelManager/Lab5.UI/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Lab5.UI.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
+
+[/Users/ilya/Downloads/HotelManager/Lab5.UI/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Lab5.UI.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml

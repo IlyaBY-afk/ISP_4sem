@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:entities="clr-namespace:Lab5.Domain.Entities;assembly=Lab5.Domain"
+             xmlns:convertors="clr-namespace:Lab5.UI.ValueConverters"
+             xmlns:viewModels="using:Lab5.UI.ViewModels"
+             x:Class="Lab5.UI.Pages.TaskPages.ViewCategory"
+             x:DataType="viewModels:ViewCategoryViewModel">
+
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior
+            EventName="Appearing"
+            Command="{Binding Path=LoadCategoriesCommand}" />
+        <toolkit:EventToCommandBehavior
+            EventName="Appearing"
+            Command="{Binding Path=UpdateRoomsCommand}" />
+    </ContentPage.Behaviors>
+
+    <ContentPage.Resources>
+        <convertors:RateToColorValueConverter x:Key="RateToColorValueConverter" />
+    </ContentPage.Resources>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+            Text="Add сategory"
+            Command="{Binding AddCategoryCommand}" />
+        <ToolbarItem
+            Text="Edit category"
+            IsEnabled="{Binding SelectedCategory}"
+            Command="{Binding EditCategoryCommand}" />
+        <ToolbarItem
+            Text="Delete category"
+            IsEnabled="{Binding SelectedCategory}"
+            Command="{Binding DeleteCategoryCommand}" />
+        <ToolbarItem
+            Text="Add Room"
+            IsEnabled="{Binding SelectedCategory}"
+            Command="{Binding AddRoomCommand}" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout
+            Margin="20, 40">
+            <Picker
+                x:Name="PCategory"
+                ItemsSource="{Binding ListOfCategories}"
+                ItemDisplayBinding="{Binding Name}"
+                SelectedItem="{Binding SelectedCategory}">
+                <Picker.Behaviors>
+                    <toolkit:EventToCommandBehavior
+                        EventName="SelectedIndexChanged"
+                        Command="{Binding UpdateSelectedCategoryCommand}"
+                        CommandParameter="{Binding Source={x:Reference PCategory}, Path=SelectedItem}" />
+                </Picker.Behaviors>
+            </Picker>
+
+            <Frame
+                Margin="0, 20, 0, 20"
+                IsVisible="{Binding SelectedCategory}">
+                <VerticalStackLayout
+                    Padding="5"
+                    Spacing="10">
+                    <Label>
+                        <Label.Text>
+                            <Binding Path="SelectedCategory.Description" StringFormat="Описание: {0}" />
+                        </Label.Text>
+                    </Label>
+                </VerticalStackLayout>
+            </Frame>
+
+            <CollectionView
+                VerticalOptions="FillAndExpand"
+                ItemsSource="{Binding ListOfRooms}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="entities:Room">
+                        <VerticalStackLayout>
+                            <Frame Padding="20"
+                                   Margin="0,10,0,10"
+                                   BackgroundColor="{Binding ServiceCost, Converter={StaticResource RateToColorValueConverter}}">
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                        Command="{Binding
+                                                Source={RelativeSource
+                                                    AncestorType={x:Type viewModels:ViewCategoryViewModel}},
+                                                Path=GoToRoomCommand}"
+                                        CommandParameter="{Binding}" />
+                                </Frame.GestureRecognizers>
+                                <HorizontalStackLayout>
+                                    <Image
+                                        Source="{Binding ImageSrc}"
+                                        HeightRequest="50"
+                                        Margin="0, 0, 20, 0" />
+                                    <VerticalStackLayout>
+                                        <Label Text="{Binding Name}" />
+                                        <Label Text="{Binding ServiceCost, StringFormat='Стоимость: {0}'}" />
+                                    </VerticalStackLayout>
+                                </HorizontalStackLayout>
+                            </Frame>
+                        </VerticalStackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

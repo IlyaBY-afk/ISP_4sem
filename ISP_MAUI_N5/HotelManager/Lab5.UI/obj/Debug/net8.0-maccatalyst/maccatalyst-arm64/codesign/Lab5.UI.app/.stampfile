@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign - --entitlements /Users/ilya/Downloads/HotelManager/Lab5.UI/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/Entitlements.xcent /Users/ilya/Downloads/HotelManager/Lab5.UI/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/Lab5.UI.app

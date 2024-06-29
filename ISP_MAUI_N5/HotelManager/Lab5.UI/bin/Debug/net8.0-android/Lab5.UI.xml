@@ -1,0 +1,250 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Lab5.UI</name>
+    </assembly>
+    <members>
+        <member name="T:Lab5.UI.ViewModels.AddOrEditCategoryViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Lab5.UI.ViewModels.AddOrEditCategoryViewModel.Name">
+            <inheritdoc cref="F:Lab5.UI.ViewModels.AddOrEditCategoryViewModel.name"/>
+        </member>
+        <member name="P:Lab5.UI.ViewModels.AddOrEditCategoryViewModel.Description">
+            <inheritdoc cref="F:Lab5.UI.ViewModels.AddOrEditCategoryViewModel.description"/>
+        </member>
+        <member name="F:Lab5.UI.ViewModels.AddOrEditCategoryViewModel.addOrEditCategoryCommand">
+            <summary>The backing field for <see cref="P:Lab5.UI.ViewModels.AddOrEditCategoryViewModel.AddOrEditCategoryCommand"/>.</summary>
+        </member>
+        <member name="P:Lab5.UI.ViewModels.AddOrEditCategoryViewModel.AddOrEditCategoryCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Lab5.UI.ViewModels.AddOrEditCategoryViewModel.AddOrEditCategory"/>.</summary>
+        </member>
+        <member name="F:Lab5.UI.ViewModels.AddOrEditCategoryViewModel.goBackCommand">
+            <summary>The backing field for <see cref="P:Lab5.UI.ViewModels.AddOrEditCategoryViewModel.GoBackCommand"/>.</summary>
+        </member>
+        <member name="P:Lab5.UI.ViewModels.AddOrEditCategoryViewModel.GoBackCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Lab5.UI.ViewModels.AddOrEditCategoryViewModel.GoBack"/>.</summary>
+        </member>
+        <member name="T:Lab5.UI.ViewModels.AddOrEditRoomViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Lab5.UI.ViewModels.AddOrEditRoomViewModel.ServiceCost">
+            <inheritdoc cref="F:Lab5.UI.ViewModels.AddOrEditRoomViewModel.serviceCost"/>
+        </member>
+        <member name="P:Lab5.UI.ViewModels.AddOrEditRoomViewModel.ImageSrc">
+            <inheritdoc cref="F:Lab5.UI.ViewModels.AddOrEditRoomViewModel.imageSrc"/>
+        </member>
+        <member name="P:Lab5.UI.ViewModels.AddOrEditRoomViewModel.Name">
+            <inheritdoc cref="F:Lab5.UI.ViewModels.AddOrEditRoomViewModel.name"/>
+        </member>
+        <member name="P:Lab5.UI.ViewModels.AddOrEditRoomViewModel.CheckInDate">
+            <inheritdoc cref="F:Lab5.UI.ViewModels.AddOrEditRoomViewModel.checkInDate"/>
+        </member>
+        <member name="P:Lab5.UI.ViewModels.AddOrEditRoomViewModel.CheckOutDate">
+            <inheritdoc cref="F:Lab5.UI.ViewModels.AddOrEditRoomViewModel.checkOutDate"/>
+        </member>
+        <member name="F:Lab5.UI.ViewModels.AddOrEditRoomViewModel.addOrEditRoomCommand">
+            <summary>The backing field for <see cref="P:Lab5.UI.ViewModels.AddOrEditRoomViewModel.AddOrEditRoomCommand"/>.</summary>
+        </member>
+        <member name="P:Lab5.UI.ViewModels.AddOrEditRoomViewModel.AddOrEditRoomCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Lab5.UI.ViewModels.AddOrEditRoomViewModel.AddOrEditRoom"/>.</summary>
+        </member>
+        <member name="F:Lab5.UI.ViewModels.AddOrEditRoomViewModel.selectImageCommand">
+            <summary>The backing field for <see cref="P:Lab5.UI.ViewModels.AddOrEditRoomViewModel.SelectImageCommand"/>.</summary>
+        </member>
+        <member name="P:Lab5.UI.ViewModels.AddOrEditRoomViewModel.SelectImageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Lab5.UI.ViewModels.AddOrEditRoomViewModel.SelectImage"/>.</summary>
+        </member>
+        <member name="F:Lab5.UI.ViewModels.AddOrEditRoomViewModel.goBackCommand">
+            <summary>The backing field for <see cref="P:Lab5.UI.ViewModels.AddOrEditRoomViewModel.GoBackCommand"/>.</summary>
+        </member>
+        <member name="P:Lab5.UI.ViewModels.AddOrEditRoomViewModel.GoBackCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Lab5.UI.ViewModels.AddOrEditRoomViewModel.GoBack"/>.</summary>
+        </member>
+        <member name="F:Lab5.UI.ViewModels.AddOrEditRoomViewModel.updateServiceCostCommand">
+            <summary>The backing field for <see cref="P:Lab5.UI.ViewModels.AddOrEditRoomViewModel.UpdateServiceCostCommand"/>.</summary>
+        </member>
+        <member name="P:Lab5.UI.ViewModels.AddOrEditRoomViewModel.UpdateServiceCostCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:Lab5.UI.ViewModels.AddOrEditRoomViewModel.UpdateServiceCost(System.Double)"/>.</summary>
+        </member>
+        <member name="T:Lab5.UI.ViewModels.ViewCategoryViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Lab5.UI.ViewModels.ViewCategoryViewModel.SelectedCategory">
+            <inheritdoc cref="F:Lab5.UI.ViewModels.ViewCategoryViewModel.selectedCategory"/>
+        </member>
+        <member name="F:Lab5.UI.ViewModels.ViewCategoryViewModel.loadCategoriesCommand">
+            <summary>The backing field for <see cref="P:Lab5.UI.ViewModels.ViewCategoryViewModel.LoadCategoriesCommand"/>.</summary>
+        </member>
+        <member name="P:Lab5.UI.ViewModels.ViewCategoryViewModel.LoadCategoriesCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Lab5.UI.ViewModels.ViewCategoryViewModel.LoadCategories"/>.</summary>
+        </member>
+        <member name="F:Lab5.UI.ViewModels.ViewCategoryViewModel.updateSelectedCategoryCommand">
+            <summary>The backing field for <see cref="P:Lab5.UI.ViewModels.ViewCategoryViewModel.UpdateSelectedCategoryCommand"/>.</summary>
+        </member>
+        <member name="P:Lab5.UI.ViewModels.ViewCategoryViewModel.UpdateSelectedCategoryCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:Lab5.UI.ViewModels.ViewCategoryViewModel.UpdateSelectedCategory(Lab5.Domain.Entities.Category)"/>.</summary>
+        </member>
+        <member name="F:Lab5.UI.ViewModels.ViewCategoryViewModel.updateRoomsCommand">
+            <summary>The backing field for <see cref="P:Lab5.UI.ViewModels.ViewCategoryViewModel.UpdateRoomsCommand"/>.</summary>
+        </member>
+        <member name="P:Lab5.UI.ViewModels.ViewCategoryViewModel.UpdateRoomsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Lab5.UI.ViewModels.ViewCategoryViewModel.UpdateRooms"/>.</summary>
+        </member>
+        <member name="F:Lab5.UI.ViewModels.ViewCategoryViewModel.goToRoomCommand">
+            <summary>The backing field for <see cref="P:Lab5.UI.ViewModels.ViewCategoryViewModel.GoToRoomCommand"/>.</summary>
+        </member>
+        <member name="P:Lab5.UI.ViewModels.ViewCategoryViewModel.GoToRoomCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:Lab5.UI.ViewModels.ViewCategoryViewModel.GoToRoom(Lab5.Domain.Entities.Room)"/>.</summary>
+        </member>
+        <member name="F:Lab5.UI.ViewModels.ViewCategoryViewModel.addRoomCommand">
+            <summary>The backing field for <see cref="P:Lab5.UI.ViewModels.ViewCategoryViewModel.AddRoomCommand"/>.</summary>
+        </member>
+        <member name="P:Lab5.UI.ViewModels.ViewCategoryViewModel.AddRoomCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Lab5.UI.ViewModels.ViewCategoryViewModel.AddRoom"/>.</summary>
+        </member>
+        <member name="F:Lab5.UI.ViewModels.ViewCategoryViewModel.addCategoryCommand">
+            <summary>The backing field for <see cref="P:Lab5.UI.ViewModels.ViewCategoryViewModel.AddCategoryCommand"/>.</summary>
+        </member>
+        <member name="P:Lab5.UI.ViewModels.ViewCategoryViewModel.AddCategoryCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Lab5.UI.ViewModels.ViewCategoryViewModel.AddCategory"/>.</summary>
+        </member>
+        <member name="F:Lab5.UI.ViewModels.ViewCategoryViewModel.editCategoryCommand">
+            <summary>The backing field for <see cref="P:Lab5.UI.ViewModels.ViewCategoryViewModel.EditCategoryCommand"/>.</summary>
+        </member>
+        <member name="P:Lab5.UI.ViewModels.ViewCategoryViewModel.EditCategoryCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Lab5.UI.ViewModels.ViewCategoryViewModel.EditCategory"/>.</summary>
+        </member>
+        <member name="F:Lab5.UI.ViewModels.ViewCategoryViewModel.deleteCategoryCommand">
+            <summary>The backing field for <see cref="P:Lab5.UI.ViewModels.ViewCategoryViewModel.DeleteCategoryCommand"/>.</summary>
+        </member>
+        <member name="P:Lab5.UI.ViewModels.ViewCategoryViewModel.DeleteCategoryCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Lab5.UI.ViewModels.ViewCategoryViewModel.DeleteCategory"/>.</summary>
+        </member>
+        <member name="T:Lab5.UI.ViewModels.ViewRoomViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Lab5.UI.ViewModels.ViewRoomViewModel.Room">
+            <inheritdoc cref="F:Lab5.UI.ViewModels.ViewRoomViewModel.room"/>
+        </member>
+        <member name="P:Lab5.UI.ViewModels.ViewRoomViewModel.Name">
+            <inheritdoc cref="F:Lab5.UI.ViewModels.ViewRoomViewModel.name"/>
+        </member>
+        <member name="P:Lab5.UI.ViewModels.ViewRoomViewModel.ServiceCost">
+            <inheritdoc cref="F:Lab5.UI.ViewModels.ViewRoomViewModel.serviceCost"/>
+        </member>
+        <member name="P:Lab5.UI.ViewModels.ViewRoomViewModel.CategoryId">
+            <inheritdoc cref="F:Lab5.UI.ViewModels.ViewRoomViewModel.categoryId"/>
+        </member>
+        <member name="P:Lab5.UI.ViewModels.ViewRoomViewModel.CheckInDate">
+            <inheritdoc cref="F:Lab5.UI.ViewModels.ViewRoomViewModel.checkInDate"/>
+        </member>
+        <member name="P:Lab5.UI.ViewModels.ViewRoomViewModel.CheckOutDate">
+            <inheritdoc cref="F:Lab5.UI.ViewModels.ViewRoomViewModel.checkOutDate"/>
+        </member>
+        <member name="P:Lab5.UI.ViewModels.ViewRoomViewModel.ImageSrc">
+            <inheritdoc cref="F:Lab5.UI.ViewModels.ViewRoomViewModel.imageSrc"/>
+        </member>
+        <member name="F:Lab5.UI.ViewModels.ViewRoomViewModel.getRoomByIdCommand">
+            <summary>The backing field for <see cref="P:Lab5.UI.ViewModels.ViewRoomViewModel.GetRoomByIdCommand"/>.</summary>
+        </member>
+        <member name="P:Lab5.UI.ViewModels.ViewRoomViewModel.GetRoomByIdCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Lab5.UI.ViewModels.ViewRoomViewModel.GetRoomById"/>.</summary>
+        </member>
+        <member name="F:Lab5.UI.ViewModels.ViewRoomViewModel.deleteRoomCommand">
+            <summary>The backing field for <see cref="P:Lab5.UI.ViewModels.ViewRoomViewModel.DeleteRoomCommand"/>.</summary>
+        </member>
+        <member name="P:Lab5.UI.ViewModels.ViewRoomViewModel.DeleteRoomCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Lab5.UI.ViewModels.ViewRoomViewModel.DeleteRoom"/>.</summary>
+        </member>
+        <member name="F:Lab5.UI.ViewModels.ViewRoomViewModel.editRoomCommand">
+            <summary>The backing field for <see cref="P:Lab5.UI.ViewModels.ViewRoomViewModel.EditRoomCommand"/>.</summary>
+        </member>
+        <member name="P:Lab5.UI.ViewModels.ViewRoomViewModel.EditRoomCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Lab5.UI.ViewModels.ViewRoomViewModel.EditRoom"/>.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Name">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Name" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Description">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Description" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ServiceCost">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ServiceCost" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ImageSrc">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ImageSrc" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CheckInDate">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CheckInDate" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CheckOutDate">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CheckOutDate" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedCategory">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedCategory" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Room">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Room" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CategoryId">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CategoryId" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Name">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Name" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Description">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Description" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ServiceCost">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ServiceCost" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ImageSrc">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ImageSrc" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CheckInDate">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CheckInDate" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CheckOutDate">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CheckOutDate" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedCategory">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedCategory" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Room">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Room" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CategoryId">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CategoryId" generated properties.</summary>
+        </member>
+    </members>
+</doc>
