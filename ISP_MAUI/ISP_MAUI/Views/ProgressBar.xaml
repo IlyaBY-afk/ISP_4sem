@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:ISP_MAUI.ViewModels"
+             x:Class="ISP_MAUI.Views.ProgressBar"
+             x:DataType="viewmodel:ProgressBarViewModel">
+    <FlexLayout Direction="Column"
+                AlignItems="Center"
+                JustifyContent="SpaceEvenly">
+        <Label FontSize="24" 
+               Text="{Binding Result}"/>
+        <HorizontalStackLayout>
+            <ProgressBar WidthRequest="500"
+                         HorizontalOptions="Center"
+                         ProgressColor="{StaticResource Tertiary}"
+                         Progress="{Binding ProgressValue}"/>
+            <Label Text="{Binding StringFormat=' {0:F1}%', Path=Percentage}"/>
+        </HorizontalStackLayout>
+        
+        <HorizontalStackLayout Margin="20">
+            <Button Background="{StaticResource Tertiary}"
+                    Margin="10"
+                    Text="Start"
+                    Command="{Binding  IntegrateCommand}"/>
+            <Button Background="{StaticResource Tertiary}" 
+                    Margin="10"
+                    Text="Cancel"
+                    Command="{Binding CancelCommand}"/>
+        </HorizontalStackLayout>
+    </FlexLayout>
+</ContentPage>

@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign - --entitlements /Users/ilya/RiderProjects/ISP_MAUI/ISP_MAUI/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/Entitlements.xcent /Users/ilya/RiderProjects/ISP_MAUI/ISP_MAUI/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/ISP_MAUI.app

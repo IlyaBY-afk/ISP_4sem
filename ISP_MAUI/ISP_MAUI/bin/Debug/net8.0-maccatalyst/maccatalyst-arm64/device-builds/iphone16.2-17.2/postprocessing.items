@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_PostProcessingItem Include="ISP_MAUI.app/Contents/MacOS/ISP_MAUI">
+      <BCSymbolMapName>ISP_MAUI.bcsymbolmap</BCSymbolMapName>
+      <NoDSymUtil>true</NoDSymUtil>
+      <dSYMSourcePathExists>false</dSYMSourcePathExists>
+      <NoSymbolStrip>true</NoSymbolStrip>
+      <dSYMInfoPlistRelativePath>ISP_MAUI.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
+      <SymbolFile>/Users/ilya/RiderProjects/ISP_MAUI/ISP_MAUI/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/device-builds/iphone16.2-17.2/mtouch-symbols.list</SymbolFile>
+      <DSymName>ISP_MAUI.app.dSYM</DSymName>
+      <SourceProjectPath>/Users/ilya/RiderProjects/ISP_MAUI/ISP_MAUI</SourceProjectPath>
+    </_PostProcessingItem>
+  </ItemGroup>
+</Project>

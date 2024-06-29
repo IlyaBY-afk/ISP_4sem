@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:ISP_MAUI.ViewModels"
+             xmlns:model="clr-namespace:ISP_MAUI.Entities"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:DataType="viewmodel:CurrencyViewModel"
+             x:Class="ISP_MAUI.Views.Currency">
+    
+    <RefreshView VerticalOptions="Fill"
+                HorizontalOptions="Fill"
+                Command="{Binding GetRatesCommand}"
+                IsRefreshing="{Binding IsBusy}">
+        <VerticalStackLayout>
+            <DatePicker MinimumDate="01/01/2020"
+                        Date="{Binding SelectedDate}">
+                <DatePicker.Behaviors>
+                    <toolkit:EventToCommandBehavior
+                        Command="{Binding GetRatesCommand}"
+                        EventName="DateSelected"/>
+                </DatePicker.Behaviors>
+            </DatePicker>
+            <ScrollView>
+                <CollectionView ItemsSource="{Binding Rates}"
+                                SelectionMode="None" EmptyView="No items to display">
+                
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="model:Rate">
+                            <Frame BorderColor="White"
+                                   Margin="5">
+                                <VerticalStackLayout>
+                                    <Label Text="{Binding Cur_Name}"
+                                           FontSize="24"
+                                           TextColor="White"
+                                           Margin="5"/>
+                                    <Label Text="{Binding Path=Cur_OfficialRate}"
+                                           FontSize="18"
+                                           TextColor="White"
+                                           Margin="5"/>
+                                </VerticalStackLayout>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </ScrollView>
+        </VerticalStackLayout>
+    </RefreshView>
+</ContentPage>

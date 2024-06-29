@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:ISP_MAUI.ViewModels"
+             xmlns:model="clr-namespace:ISP_MAUI.Entities"
+             xmlns:entities="clr-namespace:ISP_MAUI.Entities"
+             x:DataType="viewmodel:DemoDBViewModel"
+             x:Class="ISP_MAUI.Views.DemoDb">
+    
+    <ScrollView VerticalOptions="Fill"
+                HorizontalOptions="Fill">
+        <VerticalStackLayout>
+            <CollectionView ItemsSource="{Binding Cocktails}"
+                            SelectionMode="None">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:Cocktail">
+                        <Frame BorderColor="White"
+                               Margin="5">
+                            <VerticalStackLayout>
+                                <Label Text="{Binding Name}"
+                                       FontSize="24"
+                                       TextColor="White"
+                                       Margin="5"/>
+                                <Label Text="{Binding StringFormat='{0} ml', Path=Volume}"
+                                       FontSize="18"
+                                       TextColor="White"
+                                       Margin="5"/>
+                            </VerticalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <Picker x:DataType="entities:Cocktail"
+                    ItemsSource="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:DemoDBViewModel}}, Path=Cocktails}"
+                    SelectedItem="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:DemoDBViewModel}}, Path=SelectedCocktail}"
+                    ItemDisplayBinding="{Binding Name}"
+                    SelectedIndexChanged="OnSelectedCocktail"/>
+            
+            <Label TextColor="Khaki"
+                   FontSize="24"
+                   Text="{Binding SelectedCocktail.Name}">
+            </Label>
+            <VerticalStackLayout>
+                <CollectionView ItemsSource="{Binding Ingredients}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="model:Ingredient">
+                            <Frame BorderColor="Khaki"
+                                   Margin="10">
+                                <VerticalStackLayout>
+                                    <Label Text="{Binding Name}"
+                                           FontSize="20"
+                                           TextColor="White"
+                                           Margin="10"/>
+                                    <Label Text="{Binding StringFormat='{0}$', Path=Price}"
+                                           FontSize="18"
+                                           TextColor="White"
+                                           Margin="10"/>
+                                </VerticalStackLayout>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
